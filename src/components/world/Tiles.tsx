@@ -1,9 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
-import { TileType, useGameState } from "../../logic/useGame";
+import { useEffect, useState } from "react";
 import {
   calculateTilesToEnsure,
   shouldTileBeDiscarded,
 } from "../../logic/tileLogic";
+import { useGameState } from "../../logic/useGame";
 import { TILE_SIZE, Tile } from "./Tile";
 
 export default function Tiles() {

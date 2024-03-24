@@ -1,8 +1,8 @@
 import Ecctrl from "ecctrl";
 import { useEffect, useRef } from "react";
-import { useGameState } from "../logic/useGame";
 import type { Group } from "three";
 import { Vector3 } from "three";
+import { useGameState } from "../logic/useGame";
 
 export default function Player() {
   const setPlayerPosition = useGameState((state) => state.setPlayerPosition);
@@ -21,6 +21,7 @@ export default function Player() {
   }, [setPlayerPosition]);
 
   return (
+    // @ts-expect-error library seems broken
     <Ecctrl
       camInitDis={-0.01} // camera intial position
       camMinDis={-0.01} // camera zoom in closest position

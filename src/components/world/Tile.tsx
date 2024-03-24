@@ -1,8 +1,8 @@
-import { useEffect, useMemo } from "react";
-import Floor from "./Floor";
-import Tree from "./Tree";
+import { useEffect } from "react";
 import { useGameState } from "../../logic/useGame";
+import Floor from "./Floor";
 import SmallRock from "./SmallRock";
+import Tree from "./Tree";
 
 export const TILE_SIZE = 20;
 

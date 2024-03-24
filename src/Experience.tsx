@@ -1,24 +1,18 @@
+import { KeyboardControls, PerformanceMonitor } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
-import { Physics } from "@react-three/rapier";
-import {
-  KeyboardControls,
-  PerformanceMonitor,
-  PointerLockControls,
-  Torus,
-} from "@react-three/drei";
-import { keyboardMap } from "./lib/keyboard";
-import Player from "./components/Player";
 import {
   Bloom,
-  DepthOfField,
   EffectComposer,
   Noise,
-  Vignette,
   Pixelation,
+  Vignette,
 } from "@react-three/postprocessing";
+import { Physics } from "@react-three/rapier";
+import { Suspense } from "react";
 import Level from "./Level";
 import Ui from "./Ui";
+import Player from "./components/Player";
+import { keyboardMap } from "./lib/keyboard";
 import { useGameState } from "./logic/useGame";
 
 export default function App() {

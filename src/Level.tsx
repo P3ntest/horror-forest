@@ -1,5 +1,4 @@
 import { RigidBody } from "@react-three/rapier";
-import { Tile } from "./components/world/Tile";
 import Tiles from "./components/world/Tiles";
 
 export default function Level() {

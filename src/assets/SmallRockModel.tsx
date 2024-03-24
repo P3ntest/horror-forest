@@ -18,6 +18,7 @@ export default function Model({
   );
   return (
     <group ref={group} {...props} dispose={null}>
+      {/* @ts-expect-error ts-migrate(2554) copied the code idk */}
       <mesh geometry={nodes.menhir_mini.geometry}>
         <meshStandardMaterial
           attach="material"

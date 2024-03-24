@@ -1,7 +1,5 @@
-import { CuboidCollider } from "@react-three/rapier";
-import SmallRockModel from "../../assets/SmallRockModel";
-import { Outline } from "@react-three/postprocessing";
 import { useState } from "react";
+import SmallRockModel from "../../assets/SmallRockModel";
 
 export default function SmallRock() {
   const [mouseOver, setMouseOver] = useState(false);
