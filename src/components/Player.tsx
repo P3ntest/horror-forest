@@ -1,4 +1,4 @@
-import Ecctrl from "ecctrl";
+import Ecctrl from "../libs/ecctrl/Ecctrl";
 import { useEffect, useRef } from "react";
 import type { Group } from "three";
 import { Vector3 } from "three";
@@ -21,7 +21,6 @@ export default function Player() {
   }, [setPlayerPosition]);
 
   return (
-    // @ts-expect-error library seems broken
     <Ecctrl
       camInitDis={-0.01} // camera intial position
       camMinDis={-0.01} // camera zoom in closest position
